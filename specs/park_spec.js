@@ -42,12 +42,17 @@ describe('Park', function() {
     assert.deepStrictEqual(actual, 2);
   });
 
-  it('should be able to find the dinosaur that attracts the most visitors', function(){
-    park.mostVisits()
-    
+  // it('should be able to find the dinosaur that attracts the most visitors', function(){
+  //   park.mostVisits()
+  //
+  // });
+
+  it('should be able to find all dinosaurs of a particular species', function(){
+    const actual = park.countSpecies(dinosaurs)
+    assert.deepStrictEqual(actual, 2);
   });
 
-  it('should be able to find all dinosaurs of a particular species');
+
 
   it('should be able to remove all dinosaurs of a particular species');
 

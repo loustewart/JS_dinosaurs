@@ -15,14 +15,29 @@ Park.prototype.deleteDinosaur = function(dinosaur){
   this.dinosaurs.pop(dinosaur)
 }
 
-Park.prototype.mostVisits = function
+// Park.prototype.mostVisits = function(dinosaurs){
+//   for dinosaur in dinosaurs
+//
+//
+// }
 
 
+Park.prototype.countSpecies = function(dinosaurs){
+  var filteredSpecies = [];
+  for (var dinosaur of this.dinosaurs){
+    if (dinosaur.species[0] === 't-rex'){
+      filteredSpecies.push(species)
+    }
+  }
+  return filteredSpecies.length
+
+}
+
+
+// var students = ['Alice', 'Bob', 'Abdul', 'Sue', 'Alvin'];
+// var filteredStudents = filterNames(students, 'A');
+// console.log('Filtered Students:', filteredStudents);
+//
 
 
 module.exports = Park;
-
-
-
-
-Math.max.apply(Math, dinosaurs.map(function(o) { return o.guestsAttractedPerDay; }))
